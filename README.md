@@ -1,4 +1,4 @@
-# F2GAN: Few-Shot Image Generation
+# Matchinggan: Matching-Based Few-Shot Image Generation
 
 Code for our **ICME 2020** paper *"Matchinggan: Matching-Based Few-Shot Image Generation"*.
 
