@@ -129,9 +129,6 @@ pip install -r requirements.txt
 ```
 
 
-### Trained Model
-
-COMING SOON !
 
 ### Training
 
@@ -195,7 +192,7 @@ python GAN_metrcis_FID_IS_LPIPS.py  --dataroot_real ./EVALUATION/Augmented/vggfa
 
 
 #### 3. Testing the classification in low-data setting with augmented images.
-take Omniglot as example, low-data classification with augmented images generated from our trained model
+Take Omniglot as example, low-data classification with augmented images generated from our trained model
 
 3.1. Gnerating augmented images using three conditional images
 ```
@@ -218,13 +215,13 @@ train_classifier_with_augmented_images.py --dataset omniglot  --selected_classes
 
 
 #### 4. Testing the classification in few-shot setting with augmented images.
-take Omniglot as example, NwayKshot classification with augmented images generated from our trained model
+Take Omniglot as example, NwayKshot classification with augmented images generated from our trained model
 
 4.1. Gnerating augmented images using Kshot conditional images
 ```
 python test_dagan_with_matchingclassifier_for_generation.py  --is_training 0 --is_all_test_categories 1 --is_generation_for_classifier 1  --general_classification_samples 10 --dataset omniglot --image_width 28  --batch_size 30  --num_generations 128 --experiment_title EVALUATION_Augmented_omniglot_ICME --selected_classes 1 --support_number K   --restore_path path ./trained_models/omniglot/ --continue_from_epoch 100
 ```
-setting the '--support_number' as K.
+Setting the '--support_number' as K.
 
 4.2. Preprocessing the generated images
 ```
@@ -238,7 +235,7 @@ python data_preparation.py --dataroot ./EVALUATION/Augmented/omniglot/ICME/visua
 ```
 train_classifier_with_augmented_images.py --dataset omniglot  --selected_classes N  --batch_size 16 --classification_total_epoch 50  --experiment_title AugmentedFewshotClassifier_  --image_width 28  --image_height 28 --image_channel 1
 ```
-setting the '--selected_classes' as N.
+Setting the '--selected_classes' as N.
 
 
 
@@ -273,7 +270,7 @@ Some of the codes are built upon [DAGAN](https://github.com/AntreasAntoniou/DAGA
 
 If you get any problems or if you find any bugs, don't hesitate to comment on GitHub or make a pull request!
 
-*F2GAN* is freely available for non-commercial use, and may be redistributed under these conditions. For commercial queries, please drop an e-mail. We will send the detail agreement to you.
+*MatchingGAN* is freely available for non-commercial use, and may be redistributed under these conditions. For commercial queries, please drop an e-mail. We will send the detail agreement to you.
 
 
 
