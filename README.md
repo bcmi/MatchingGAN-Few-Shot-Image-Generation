@@ -147,7 +147,7 @@ python train_dagan_with_matchingclassifier.py --dataset emnist --image_width 28 
 3.Train on VGGFce dataset
 
 ```
-python train_dagan_with_matchingclassifier.py --dataset vggface --image_width 28 --batch_size 20  --experiment_title ICMEMatchingGAN/vggface1way3shot   --selected_classes 1 --support_number 3  --loss_G 1 --loss_D 1 --loss_CLA 1  --loss_recons_B 0.1 --loss_matching_D 1   
+python train_dagan_with_matchingclassifier.py --dataset vggface --image_width 96 --batch_size 20  --experiment_title ICMEMatchingGAN/vggface1way3shot   --selected_classes 1 --support_number 3  --loss_G 1 --loss_D 1 --loss_CLA 1  --loss_recons_B 0.1 --loss_matching_D 1   
 ```
 
 
